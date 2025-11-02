@@ -7,6 +7,8 @@ void main() {
 }
 
 class Codeathon extends StatefulWidget {
+  static GlobalKey<NavigatorState> navigatorKey = GlobalKey();
+
   const Codeathon({super.key});
 
   @override
@@ -14,12 +16,10 @@ class Codeathon extends StatefulWidget {
 }
 
 class _CodeathonState extends State<Codeathon> {
-  GlobalKey<NavigatorState> navigatorKey = GlobalKey();
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      navigatorKey: navigatorKey,
+      navigatorKey: Codeathon.navigatorKey,
       title: 'Codeathon',
       theme: themeData,
       home: const Splash(),
