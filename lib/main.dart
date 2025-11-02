@@ -1,4 +1,6 @@
 import 'package:codeathon/core/ui/themes.dart';
+import 'package:codeathon/screens/mood_input_screen.dart';
+import 'package:codeathon/screens/mood_preset.dart';
 import 'package:codeathon/screens/splash.dart';
 import 'package:flutter/material.dart';
 
@@ -22,7 +24,7 @@ class _CodeathonState extends State<Codeathon> {
       navigatorKey: Codeathon.navigatorKey,
       title: 'Codeathon',
       theme: themeData,
-      home: const Splash(),
+      home: const MoodInputScreen(),
     );
   }
 }
