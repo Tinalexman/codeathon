@@ -3,7 +3,7 @@ import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-ThemeData lightThemeData = FlexThemeData.light(
+ThemeData themeData = FlexThemeData.light(
   useMaterial3: true,
   scheme: FlexScheme.shadOrange,
   appBarStyle: FlexAppBarStyle.scaffoldBackground,
